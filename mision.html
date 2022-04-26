@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="64x64">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/e1cd5ca43b.js" crossorigin="anonymous"></script>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Isiuey Sass</title>
+</head>
+<body>
+    <div class="top-container">
+        <div class="logo">
+            <a href="index.html"><h2>isiuey</h2></a>
+        </div>
+        <div class="navbar">
+            <input id="menu-toggle" type="checkbox" class="icons" />
+            <label class='menu-button-container icons' for="menu-toggle">
+            <div class='menu-button icons'></div>
+  </label>
+         <ul class="menu">
+             <li><a href="index.html">Inicio</a></li>
+             <li><a href="player.html">Reproductor</a></li>
+             <li><a href="mision.html">Mision</a></li>
+             <li><a href="artist.html">Artistas</a></li>
+             <li><a href="contact.html">Contacto</a></li>
+         </ul>
+        </div>
+        <div class="log-in">
+            <a href="login.html" class="btn btn-log">Iniciar Sesion</a>
+            <a href="login.html" class="btn btn-log">Registrarse</a>
+            <div class="log__icons icons">
+                <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="login.html"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <img src="img/huella.jpg" alt="Huella de Carbono" class="animate__animated animate__heartBeat">
+        </div>
+        <div class="info">
+            <h2>plataforma</h2>
+            <p>isiuey es una organización sin fines de lucro que se propone unir la teoría del triple impacto con las artes y la creatividad en red. Permite escuchar obras musicales generando un impacto activo a nivel socioambiental ya que se financia exclusivamente a través de publicidad para empresas B, y a su vez, propone distribuir un 80% de sus ganancias en financiar proyectos de carácter socio ambiental siguiendo los distintos objetivos de desarrollo sostenible.</p>
+            <a href="galeria.html" class="btn">Unirse</a>
+        </div>
+        <div class="contact">
+            <h2>Contacto</h2>
+            <form action="https://formsubmit.co/info@isiuey.org" method="post">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Juan">
+                    <label for="lastname">Apellidos</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Rodriguez Galin">
+                    <label for="mail">Email</label>
+                    <input type="text" name="mail" id="mail" placeholder="juan.rodriguez@isiuey.org" required>
+                    <textarea name="comment" id="domment" cols="30" rows="10" placeholder="Escriba aqui su comentario"></textarea>
+                    <input type="hidden" name="next" value="https://isiuey.org/index.html">
+                    <input type="submit" value="Enviar">
+            </form>
+        </div>
+         <footer class="footer">
+            <div class="col-3">
+                <div class="ft-menu">
+                    <h3>Menu</h3>
+                      <ul>
+                        <li><a href="index.html">Inicio</li></a>
+                        <li><a href="player.html">Reproductor</li></a>
+                        <li><a href="mision.html">Mision</li></a>
+                        <li><a href="artist.html">Artistas</li></a>
+                        <li><a href="contact.html">Contacto</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="subscribe">
+                    <h3>Subscribite a nuestro blog</h3>
+                    <input type="email" name="subscribe" id="subscribe" placeholder="juan.rodriguez@isiuey.org">
+                    <input type="submit" value="Subscribite">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="rrss">
+                    <h3>Nuestras Redes</h3>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="copy">
+                <p>Design by TML  |  2022  |  all rights reserved</p>
+            </div>          
+    </footer>
+    </div>
+   
+</body>
+</html>

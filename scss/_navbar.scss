@@ -1,0 +1,202 @@
+
+
+.top-container{
+    background: linear-gradient(to left, #f46b45, #eea849);   
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 2rem;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    margin-bottom: 1rem;
+    li{
+        display: inline-flex;
+        padding: 1rem;
+           }
+}
+.icons{
+    visibility: hidden;
+}
+.log-in{
+    display: flex;
+}
+
+
+@media  (max-width:600px) {
+    .top-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #00BAF0;
+        background: linear-gradient(to left, #f46b45, #eea849);
+        height: 50px;
+        padding: 1em;
+      }
+      .log__icons{
+          display: inline-flex;
+          justify-content: space-between;
+      }
+      
+      .menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .menu > li {
+        margin: 0 1rem;
+      }
+      
+      .menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #menu-toggle {
+        display: none;
+      }
+      
+      .menu-button,
+      .menu-button::before,
+      .menu-button::after {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+      }
+      .logo{
+          padding: 1rem;
+      }
+      .menu-button::before {
+        content: '';
+        margin-top: -8px;
+      }
+      
+      .menu-button::after {
+        content: '';
+        margin-top: 8px;
+      }
+      
+      #menu-toggle:checked + .menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+      }
+      
+      #menu-toggle:checked + .menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+      }
+      
+      #menu-toggle:checked + .menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+      }
+      .btn-log{
+          display: none;
+      }
+      .icons{
+          visibility: visible;
+          display: block;
+      }
+        
+}
+@media (max-width: 800px) {
+    .top-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #00BAF0;
+        background: linear-gradient(to left, #f46b45, #eea849);
+        height: 50px;
+        padding: 1em;
+      }
+      .log__icons{
+          display: inline-flex;
+          justify-content: space-between;
+      }
+      
+      .menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .menu > li {
+        margin: 0 1rem;
+      }
+      
+      .menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #menu-toggle {
+        display: none;
+        visibility: hidden;
+      }
+      
+      .menu-button,
+      .menu-button::before,
+      .menu-button::after {
+        display: block;
+        background-color: #fff;
+        visibility: hidden;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+      }
+      .logo{
+          padding: 1rem;
+      }
+      .menu-button::before {
+        content: '';
+        margin-top: -8px;
+      }
+      
+      .menu-button::after {
+        content: '';
+        margin-top: 8px;
+      }
+      
+      #menu-toggle:checked + .menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+      }
+      
+      #menu-toggle:checked + .menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+      }
+      
+      #menu-toggle:checked + .menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+      }
+      .btn-log{
+          display: none;
+      }
+      .icons{
+          visibility: visible;
+          display: block;
+      }
+   
+  }

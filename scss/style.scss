@@ -1,0 +1,210 @@
+/* IMPORT */
+@import "navbar";
+@import "globals";
+@import "responsive";
+@import "player";
+
+.main{
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgb(117, 234, 255), rgb(169, 228, 215));
+    padding:  1rem 2rem;
+}
+
+.col-2{
+    width: 50%;
+    }
+span{
+    color: $span-color;
+}
+.sidebar{
+    justify-content: center;
+    align-items: center;
+}
+.sidebar img{
+    padding: 0.3rem;
+    border: 2px solid rgb(58, 56, 56);
+}
+.info{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+.ads{
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+}
+.testimonials{
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    transition:0.5s all;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1rem;
+    background: #f2f2f2;
+    margin-left: 1rem;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.01);
+  }
+  .card span{
+    font-weight: 200;
+    font-size: 18px;
+}
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+  
+  }
+  .description button{
+    margin-top: 1.5rem;
+    margin-bottom: 0.4rem;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.description button:hover{
+    transform: scale(1.01);
+    color: rgb(113, 113, 219);
+}
+.contact{
+    border-radius: 5px;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #a59057;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-left: 45%;
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+  input[type=submit]:hover {
+    background-color: #4c724e;
+  }
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+    background-color: rgb(119, 113, 121);
+}
+.col-3{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ft-menu h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.ft-menu ul li {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 4px;
+    list-style: none;
+    text-transform: uppercase;
+}
+.col-3 h3{
+    text-align: center;
+}
+.rrss{
+    text-align: center;
+}
+.rrss .fa{
+    margin-top: 10px;
+    font-size: 30px;
+    padding-left: 10px;
+    transition: 0.5s all;
+}
+.fa:hover{
+   color: rgb(108, 110, 112);
+}
+#subscribe{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    padding: 2px;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: white;
+    grid-column: 1 / 6 ;
+}
+.ads{
+    background: $bg-color;
+}
+.contact{
+    background: $bg-color;
+    margin: 1rem;
+}
+
+@media  (max-width:900px){
+    .footer{
+        display: block;
+    }
+    .col-3{
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin: 1rem;
+    }
+    .main{
+        flex-direction: column;
+        img{
+            width: 40%;
+        }
+    }
+    .col-2{
+        width: 100%;
+    }
+    .sidebar{
+        flex-direction: column;
+    }
+}

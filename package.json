@@ -1,0 +1,26 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch scss/style.scss css/main.css",
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasmillan/Isiuey-SASS---Tomas-Millan-Lanhozo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomasmillan/Isiuey-SASS---Tomas-Millan-Lanhozo/issues"
+  },
+  "homepage": "https://github.com/tomasmillan/Isiuey-SASS---Tomas-Millan-Lanhozo#readme",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
