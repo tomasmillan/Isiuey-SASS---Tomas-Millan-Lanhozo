@@ -242,6 +242,7 @@ p {
     grid-row: 1;
     flex-direction: column;
     flex-wrap: wrap;
+    z-index: -1;
   }
 
   .sidebar {
