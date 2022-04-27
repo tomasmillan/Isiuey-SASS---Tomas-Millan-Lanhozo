@@ -79,6 +79,9 @@
 }
 
 @media (max-width: 700px) {
+    .top-container{
+    z-index: 1;
+  }
   .menu-button-container {
     display: flex;
   }
