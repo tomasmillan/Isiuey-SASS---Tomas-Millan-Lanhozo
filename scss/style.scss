@@ -20,11 +20,13 @@ span{
 .sidebar{
     justify-content: center;
     align-items: center;
-}
-.sidebar img{
+    
+     img{
     padding: 0.3rem;
     border: 2px solid rgb(58, 56, 56);
 }
+}
+
 .info{
     justify-content: center;
     flex-direction: column;
@@ -52,16 +54,12 @@ span{
     padding: 1rem;
     background: #f2f2f2;
     margin-left: 1rem;
-}
-.card:hover {
+    
+    &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transform: scale(1.01);
   }
-  .card span{
-    font-weight: 200;
-    font-size: 18px;
-}
-.card img{
+    img{
     width: 150px;
     height: 150px;
     border-radius: 150px;
@@ -70,6 +68,12 @@ span{
     margin-left: 20%;
   
   }
+    span{
+    font-weight: 200;
+        font-size: 18px;
+    }
+}
+
   .description button{
     margin-top: 1.5rem;
     margin-bottom: 0.4rem;
@@ -84,11 +88,13 @@ span{
     width: 80%;
     font-size: 18px;
     border-radius: 20px;
-}
-.description button:hover{
+      
+      &:hover{
     transform: scale(1.01);
     color: rgb(113, 113, 219);
 }
+}
+
 .contact{
     border-radius: 5px;
     padding: 2rem;
@@ -129,6 +135,10 @@ input[type=text], select, textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    h3{
+    text-align: center;
+}
 }
 .ft-menu h3{
     margin-bottom: 10px;
@@ -141,9 +151,7 @@ input[type=text], select, textarea {
     list-style: none;
     text-transform: uppercase;
 }
-.col-3 h3{
-    text-align: center;
-}
+
 .rrss{
     text-align: center;
 }
@@ -152,10 +160,11 @@ input[type=text], select, textarea {
     font-size: 30px;
     padding-left: 10px;
     transition: 0.5s all;
-}
-.fa:hover{
+    &:hover{
    color: rgb(108, 110, 112);
 }
+}
+
 #subscribe{
     display: flex;
     justify-content: space-between;
