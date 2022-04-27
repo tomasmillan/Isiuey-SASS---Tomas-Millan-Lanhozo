@@ -8,6 +8,7 @@
    grid-column: 1 / 6;
     grid-row: 1;
     display: flex;
+    z-index: -1;
 }
 .sidebar{
     grid-column: 2 / 3;
